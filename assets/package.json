@@ -6,9 +6,9 @@
   "repository": "https://github.com/papercups-io/papercups",
   "dependencies": {
     "@monaco-editor/react": "^4.2.1",
-    "@papercups-io/chat-builder": "0.0.12",
-    "@papercups-io/chat-widget": "^1.3.1",
-    "@papercups-io/storytime": "^1.0.6",
+    "@papercups-io/chat-builder": "file:../local_dependencies/@papercups-io/chat-builder",
+    "@papercups-io/chat-widget": "file:../local_dependencies/@papercups-io/chat-widget",
+    "@papercups-io/storytime": "file:../local_dependencies/@papercups-io/storytime",
     "@sentry/react": "^5.20.1",
     "@stripe/react-stripe-js": "^1.1.2",
     "@stripe/stripe-js": "^1.9.0",

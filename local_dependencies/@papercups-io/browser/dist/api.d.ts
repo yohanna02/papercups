@@ -1,0 +1,10 @@
+import { CustomerMetadata, WidgetSettings } from './types';
+export declare const fetchWidgetSettings: (accountId: string, baseUrl?: string) => Promise<WidgetSettings>;
+export declare const updateWidgetSettingsMetadata: (accountId: string, metadata: any, baseUrl?: string) => Promise<WidgetSettings>;
+export declare const createNewCustomer: (accountId: string, metadata?: Partial<CustomerMetadata>, baseUrl?: string) => Promise<any>;
+export declare const isValidCustomer: (customerId: string, accountId: string, baseUrl?: string) => Promise<any>;
+export declare const updateCustomerMetadata: (customerId: string, metadata?: Partial<CustomerMetadata>, baseUrl?: string) => Promise<any>;
+export declare const createNewConversation: (accountId: string, customerId: string, baseUrl?: string) => Promise<any>;
+export declare const findCustomerByExternalId: (externalId: string, accountId: string, filters: Record<string, any>, baseUrl?: string) => Promise<any>;
+export declare const fetchCustomerConversations: (customerId: string, accountId: string, baseUrl?: string) => Promise<any>;
+export declare const upload: (accountId: string, file: any, baseUrl?: string) => Promise<any>;
